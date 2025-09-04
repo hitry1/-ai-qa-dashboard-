@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Q&A Knowledge Base - Modern Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/modern_dashboard.css') }}?v={{ range(1000, 9999) | random }}" rel="stylesheet">
+    <!-- MathJax for mathematical expressions -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            startup: {
+                pageReady() {
+                    console.log('MathJax loaded successfully');
+                    return MathJax.startup.defaultPageReady();
+                }
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-element" style="--delay: 0s; --duration: 4s; --x: 10%; --y: 20%; --size: 30px;"></div>
+        <div class="floating-element" style="--delay: 0.5s; --duration: 5s; --x: 80%; --y: 10%; --size: 40px;"></div>
+        <div class="floating-element" style="--delay: 1s; --duration: 6s; --x: 20%; --y: 80%; --size: 25px;"></div>
+        <div class="floating-element" style="--delay: 1.5s; --duration: 4.5s; --x: 90%; --y: 70%; --size: 35px;"></div>
+        <div class="floating-element" style="--delay: 2s; --duration: 5.5s; --x: 50%; --y: 30%; --size: 20px;"></div>
+        <div class="floating-element" style="--delay: 2.5s; --duration: 7s; --x: 70%; --y: 90%; --size: 45px;"></div>
+    </div>
+
+    <!-- Authentication Overlay -->
+    <div id="authOverlay" class="auth-overlay">
+        <div class="auth-loading">
+            <div class="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>인증 확인 중...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="modern-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1 class="header-title">
+                        <i class="fas fa-brain gradient-icon"></i>
+                        AI Q&A Dashboard
+                    </h1>
+                    <span class="header-date" id="currentDate"></span>
+                </div>
+
+                <div class="header-right">
+                    <div class="search-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="globalSearch" placeholder="Search anything..." class="search-input">
+                    </div>
+                    
+                    <button class="icon-button notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge"></span>
+                    </button>
+                    
+                    <button class="icon-button settings-btn">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    
+                    <div class="user-avatar" id="userAvatar">
+                        <div class="avatar-gradient">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="user-info" id="userInfo" style="display: none;">
+                            <span class="user-name" id="userName"></span>
+                            <span class="user-email" id="userEmail"></span>
+                        </div>
+                    </div>
+                    
+                    <button onclick="logout()" class="logout-btn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="modern-nav">
+        <div class="container">
+            <div class="nav-content">
+                <button class="nav-item active" data-section="dashboard">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </button>
+                <button class="nav-item" data-section="search">
+                    <i class="fas fa-search"></i>
+                    <span>Search</span>
+                </button>
+                <button class="nav-item" data-section="ask-ai">
+                    <i class="fas fa-robot"></i>
+                    <span>Ask AI</span>
+                </button>
+                <button class="nav-item" data-section="browse">
+                    <i class="fas fa-list"></i>
+                    <span>Browse</span>
+                </button>
+                <button class="nav-item" data-section="add">
+                    <i class="fas fa-plus"></i>
+                    <span>Add Q&A</span>
+                </button>
+                <button class="nav-item" data-section="analytics">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Analytics</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="content-section active">
+                <!-- Welcome Section -->
+                <div class="welcome-section">
+                    <div class="welcome-content">
+                        <h2 class="welcome-title" id="welcomeTitle">Good morning! 👋</h2>
+                        <p class="welcome-subtitle">Here's what's happening with your AI Q&A system today.</p>
+                    </div>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon stat-icon-primary">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <span class="stat-badge stat-badge-up">+12%</span>
+                        </div>
+                        <div class="stat-content">
+                            <p class="stat-value" id="totalProjects">-</p>
+                            <p class="stat-title">Total Questions</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon stat-icon-success">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <span class="stat-badge stat-badge-up">+8%</span>
+                        </div>
+                        <div class="stat-content">
+                            <p class="stat-value" id="activeUsers">-</p>
+                            <p class="stat-title">Active Users</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon stat-icon-warning">
+                                <i class="fas fa-trending-up"></i>
+                            </div>
+                            <span class="stat-badge stat-badge-up">+15%</span>
+                        </div>
+                        <div class="stat-content">
+                            <p class="stat-value" id="totalCategories">-</p>
+                            <p class="stat-title">Categories</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-icon stat-icon-info">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <span class="stat-badge stat-badge-up">+25%</span>
+                        </div>
+                        <div class="stat-content">
+                            <p class="stat-value" id="aiResponses">156</p>
+                            <p class="stat-title">AI Responses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="section-header">
+                    <h3 class="section-title">Quick Actions</h3>
+                    <p class="section-subtitle">Use Alt+1-6 for keyboard shortcuts</p>
+                </div>
+                <div class="quick-actions-grid">
+                    <div class="quick-action-card" data-section="add">
+                        <div class="quick-action-icon quick-action-icon-blue">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <h4 class="quick-action-title">Add Question</h4>
+                        <p class="quick-action-description">Create a new Q&A pair manually</p>
+                    </div>
+
+                    <div class="quick-action-card" data-section="ask-ai">
+                        <div class="quick-action-icon quick-action-icon-green">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4 class="quick-action-title">Ask AI</h4>
+                        <p class="quick-action-description">Get instant AI-powered answers</p>
+                    </div>
+
+                    <div class="quick-action-card" data-section="browse">
+                        <div class="quick-action-icon quick-action-icon-purple">
+                            <i class="fas fa-list"></i>
+                        </div>
+                        <h4 class="quick-action-title">Browse All</h4>
+                        <p class="quick-action-description">Explore your knowledge base</p>
+                    </div>
+
+                    <div class="quick-action-card" data-section="analytics">
+                        <div class="quick-action-icon quick-action-icon-orange">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="quick-action-title">Analytics</h4>
+                        <p class="quick-action-description">View detailed statistics</p>
+                    </div>
+                </div>
+
+                <!-- Recent Activity & Schedule -->
+                <div class="dashboard-grid">
+                    <div class="dashboard-left">
+                        <div class="activity-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Recent Activity</h3>
+                                <button class="view-all-btn">
+                                    View All
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div class="activity-list" id="recentActivity">
+                                <!-- Activity items will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-right">
+                        <div class="schedule-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Today's Overview</h3>
+                                <i class="fas fa-clock card-icon"></i>
+                            </div>
+                            <div class="schedule-list">
+                                <div class="schedule-item">
+                                    <div class="schedule-dot schedule-dot-green"></div>
+                                    <div class="schedule-content">
+                                        <p class="schedule-title">Math Questions</p>
+                                        <p class="schedule-time">Most Active Category</p>
+                                    </div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="schedule-dot schedule-dot-blue"></div>
+                                    <div class="schedule-content">
+                                        <p class="schedule-title">AI Responses</p>
+                                        <p class="schedule-time">85% Accuracy Rate</p>
+                                    </div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="schedule-dot schedule-dot-purple"></div>
+                                    <div class="schedule-content">
+                                        <p class="schedule-title">New Users</p>
+                                        <p class="schedule-time">12 joined today</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="favorites-card">
+                            <div class="card-header">
+                                <h3 class="card-title">Favorites</h3>
+                                <i class="fas fa-star card-icon"></i>
+                            </div>
+                            <div class="favorites-list">
+                                <div class="favorite-item">
+                                    <div class="favorite-icon favorite-icon-blue">
+                                        <i class="fas fa-file-text"></i>
+                                    </div>
+                                    <div class="favorite-content">
+                                        <p class="favorite-title">Math Formulas</p>
+                                        <p class="favorite-time">Updated 1h ago</p>
+                                    </div>
+                                </div>
+                                <div class="favorite-item">
+                                    <div class="favorite-icon favorite-icon-green">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="favorite-content">
+                                        <p class="favorite-title">Programming Guide</p>
+                                        <p class="favorite-time">Updated 3h ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Search Section -->
+            <section id="search" class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">Search Knowledge Base</h2>
+                    <p class="section-subtitle">Find answers to your questions quickly</p>
+                </div>
+                
+                <div class="search-form-container">
+                    <div class="search-form">
+                        <div class="search-input-group">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="searchInput" placeholder="Search for homework help, study tips, or any topic...">
+                        </div>
+                        <select id="categoryFilter" class="category-select">
+                            <option value="">All Subjects</option>
+                        </select>
+                        <button onclick="performSearch()" class="search-btn">
+                            <i class="fas fa-search"></i>
+                            Search
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="searchResults" class="results-container"></div>
+            </section>
+
+            <!-- Ask AI Section -->
+            <section id="ask-ai" class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">Ask AI for Help</h2>
+                    <p class="section-subtitle">Get instant AI-powered answers to your questions</p>
+                </div>
+                
+                <div class="ai-container">
+                    <div class="ai-form">
+                        <div class="form-group">
+                            <label for="aiQuestion">Your Question</label>
+                            <textarea id="aiQuestion" placeholder="Ask anything... (e.g., How do I solve x² + 5x + 6 = 0?)" rows="4"></textarea>
+                        </div>
+                        
+                        <div class="ai-buttons">
+                            <button type="button" onclick="askAI()" class="btn-ai">
+                                <i class="fas fa-robot"></i>
+                                Ask AI
+                            </button>
+                            <button type="button" onclick="clearAIForm()" class="btn-secondary">
+                                <i class="fas fa-eraser"></i>
+                                Clear
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="aiLoading" class="ai-loading" style="display: none;">
+                        <div class="loading-spinner">
+                            <i class="fas fa-cog fa-spin"></i>
+                            <p>AI is thinking...</p>
+                        </div>
+                    </div>
+                    
+                    <div id="aiResponse" class="ai-response" style="display: none;">
+                        <!-- AI response content will be populated here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Other sections (browse, add, analytics) will be added here -->
+            <section id="browse" class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">Browse All Questions</h2>
+                    <p class="section-subtitle">Explore your complete knowledge base</p>
+                </div>
+                <div id="browseResults" class="results-container"></div>
+            </section>
+
+            <section id="add" class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">Add Your Own Q&A</h2>
+                    <p class="section-subtitle">Share your knowledge with the community</p>
+                </div>
+                <div class="add-container">
+                    <form id="addForm" class="modern-form">
+                        <div class="form-group">
+                            <label for="question">Your Question</label>
+                            <input type="text" id="question" required placeholder="What would you like to know?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="answer">Your Answer</label>
+                            <textarea id="answer" required placeholder="Provide a detailed answer..." rows="6"></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="category">Category</label>
+                                <select id="category">
+                                    <option value="일반">일반</option>
+                                    <option value="수학">수학</option>
+                                    <option value="과학">과학</option>
+                                    <option value="영어">영어</option>
+                                    <option value="국어">국어</option>
+                                    <option value="프로그래밍">프로그래밍</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="tags">Tags (optional)</label>
+                                <input type="text" id="tags" placeholder="Enter tags separated by commas">
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-plus"></i>
+                            Add Q&A
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="analytics" class="content-section">
+                <div class="section-header">
+                    <h2 class="section-title">Analytics</h2>
+                    <p class="section-subtitle">Detailed insights into your Q&A system</p>
+                </div>
+                <div id="analyticsContent" class="analytics-container">
+                    <div class="stats-loading">Loading analytics...</div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Reply Modal -->
+    <div id="replyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add Reply</h3>
+                <button class="close-btn" onclick="closeReplyModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="replyForm">
+                    <div class="form-group">
+                        <label for="replyContent">Your Reply</label>
+                        <textarea id="replyContent" required placeholder="Share your thoughts..." rows="4"></textarea>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" onclick="closeReplyModal()" class="btn-secondary">Cancel</button>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-reply"></i>
+                            Add Reply
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="modern-footer">
+        <div class="container">
+            <p>&copy; 2025 AI Q&A Knowledge Base - Powered by Claude AI</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/auth.js') }}?v={{ range(1000, 9999) | random }}"></script>
+    <script src="{{ url_for('static', filename='js/modern_dashboard.js') }}?v={{ range(1000, 9999) | random }}"></script>
+</body>
+</html>

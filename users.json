@@ -1,0 +1,41 @@
+{
+  "c1af3402-0f4c-4476-9076-d4a9c05920fe": {
+    "id": "c1af3402-0f4c-4476-9076-d4a9c05920fe",
+    "username": "testuser",
+    "email": "test@example.com",
+    "password_hash": "af82a1084932203b14b76cc0d890233e7932c7cbb09ff70c4a0aecb6efde1541",
+    "salt": "067df44aae4f84dd78e1b969c707f83e12f0c7f08b43b4fea29984e0c682498f",
+    "created_at": "2025-08-30T12:39:30.737084",
+    "last_login": "2025-08-30T12:50:33.443284",
+    "is_active": true,
+    "profile": {
+      "display_name": "testuser"
+    }
+  },
+  "ba085245-b4b7-40d0-8788-c0d4851cd630": {
+    "id": "ba085245-b4b7-40d0-8788-c0d4851cd630",
+    "username": "Tom",
+    "email": "lch06160@gmail.com",
+    "password_hash": "112fa8133be30e7abe49a9c58f668c23a5e7062c3aa59df2af4260acb9bab01d",
+    "salt": "e4ca6bbd7cb835cf006af024a85e9ff67e53c1ed587e1e5d127c3ea8f0c22a72",
+    "created_at": "2025-08-30T12:41:00.072153",
+    "last_login": null,
+    "is_active": true,
+    "profile": {
+      "display_name": "Tom"
+    }
+  },
+  "dc3fbc5b-11f2-4d77-9562-ecf1272e9a73": {
+    "id": "dc3fbc5b-11f2-4d77-9562-ecf1272e9a73",
+    "username": "\uc774\uccad\ud638",
+    "email": "lch0616001@gmail.com",
+    "password_hash": "5081918b4d609a3adbc195062a9338b5c4da61cd667de33ccfb343a5bb1158b4",
+    "salt": "755de7c5b09e569dd8d6ddd956b6f41850c98042a5e6492845c400d200b3aae7",
+    "created_at": "2025-09-02T10:38:15.319204",
+    "last_login": null,
+    "is_active": true,
+    "profile": {
+      "display_name": "\uc774\uccad\ud638"
+    }
+  }
+}

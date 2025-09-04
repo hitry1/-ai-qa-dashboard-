@@ -1,0 +1,15 @@
+{
+  "a356613e-ba1c-4d47-9c45-dbf6eefbde1e": {
+    "id": "a356613e-ba1c-4d47-9c45-dbf6eefbde1e",
+    "qa_id": "6b5549bd-65b3-4296-a550-d1e776b327e8",
+    "user_id": "c1af3402-0f4c-4476-9076-d4a9c05920fe",
+    "username": "testuser",
+    "content": "This is a great question! I found this very helpful for my studies. Thank you for sharing!",
+    "created_at": "2025-08-30T12:50:33.448896",
+    "updated_at": "2025-08-30T12:50:33.450835",
+    "is_helpful": true,
+    "helpful_votes": 1,
+    "parent_reply_id": null,
+    "is_deleted": false
+  }
+}

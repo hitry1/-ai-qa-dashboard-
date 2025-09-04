@@ -1,0 +1,944 @@
+{
+  "911e8ef3-c78b-48bd-a1e9-f86aaba34168": {
+    "id": "911e8ef3-c78b-48bd-a1e9-f86aaba34168",
+    "question": "What is Python?",
+    "answer": "Python is a high-level, interpreted programming language known for its simplicity and readability.",
+    "category": "programming",
+    "created_at": "2025-08-30T12:16:12.503414",
+    "updated_at": "2025-08-30T12:16:12.503414",
+    "tags": [
+      "python",
+      "language",
+      "programming"
+    ]
+  },
+  "18b0db3d-b427-487b-99f2-0d990478ac9d": {
+    "id": "18b0db3d-b427-487b-99f2-0d990478ac9d",
+    "question": "How do you create a list in Python?",
+    "answer": "You can create a list in Python using square brackets: my_list = [1, 2, 3, 4]",
+    "category": "programming",
+    "created_at": "2025-08-30T12:16:12.503705",
+    "updated_at": "2025-08-30T12:16:12.503705",
+    "tags": [
+      "python",
+      "list",
+      "data-structure"
+    ]
+  },
+  "06871553-1cec-4458-a943-c49dd6f5cf24": {
+    "id": "06871553-1cec-4458-a943-c49dd6f5cf24",
+    "question": "What is MCP?",
+    "answer": "MCP (Model Context Protocol) is an open standard for connecting AI assistants to data sources and tools.",
+    "category": "ai",
+    "created_at": "2025-08-30T12:16:12.503833",
+    "updated_at": "2025-08-30T12:16:12.503833",
+    "tags": [
+      "mcp",
+      "ai",
+      "protocol"
+    ]
+  },
+  "ae9dd097-2ed0-4a9f-ba4c-550d82d7469a": {
+    "id": "ae9dd097-2ed0-4a9f-ba4c-550d82d7469a",
+    "question": "How does async/await work in Python?",
+    "answer": "async/await in Python enables asynchronous programming. Use 'async def' to define coroutines and 'await' to call them.",
+    "category": "programming",
+    "created_at": "2025-08-30T12:16:12.503951",
+    "updated_at": "2025-08-30T12:16:12.503951",
+    "tags": [
+      "python",
+      "async",
+      "coroutines"
+    ]
+  },
+  "e7491764-b518-4fcf-86fd-c2811f06c662": {
+    "id": "e7491764-b518-4fcf-86fd-c2811f06c662",
+    "question": "What is Python?",
+    "answer": "Python is a high-level, interpreted programming language known for its simplicity and readability.",
+    "category": "programming",
+    "created_at": "2025-08-30T12:20:50.944329",
+    "updated_at": "2025-08-30T12:20:50.944329",
+    "tags": [
+      "python",
+      "language",
+      "programming"
+    ]
+  },
+  "2164fbb8-de86-45c3-8ce3-2e6428214b41": {
+    "id": "2164fbb8-de86-45c3-8ce3-2e6428214b41",
+    "question": "How do you create a list in Python?",
+    "answer": "You can create a list in Python using square brackets: my_list = [1, 2, 3, 4]",
+    "category": "programming",
+    "created_at": "2025-08-30T12:20:50.944546",
+    "updated_at": "2025-08-30T12:20:50.944546",
+    "tags": [
+      "python",
+      "list",
+      "data-structure"
+    ]
+  },
+  "40307898-669e-4737-89e6-89399108ea1e": {
+    "id": "40307898-669e-4737-89e6-89399108ea1e",
+    "question": "What is MCP?",
+    "answer": "MCP (Model Context Protocol) is an open standard for connecting AI assistants to data sources and tools.",
+    "category": "ai",
+    "created_at": "2025-08-30T12:20:50.944670",
+    "updated_at": "2025-08-30T12:20:50.944670",
+    "tags": [
+      "mcp",
+      "ai",
+      "protocol"
+    ]
+  },
+  "c30158c8-a611-4332-b677-15e7e58118dd": {
+    "id": "c30158c8-a611-4332-b677-15e7e58118dd",
+    "question": "How does async/await work in Python?",
+    "answer": "async/await in Python enables asynchronous programming. Use 'async def' to define coroutines and 'await' to call them.",
+    "category": "programming",
+    "created_at": "2025-08-30T12:20:50.944788",
+    "updated_at": "2025-08-30T12:20:50.944788",
+    "tags": [
+      "python",
+      "async",
+      "coroutines"
+    ]
+  },
+  "01da553a-3840-4181-8719-f9f8f20df3d0": {
+    "id": "01da553a-3840-4181-8719-f9f8f20df3d0",
+    "question": "What is machine learning?",
+    "answer": "Machine learning is a subset of AI that enables systems to learn and improve from experience without being explicitly programmed.",
+    "category": "ai",
+    "created_at": "2025-08-30T12:21:22.308071",
+    "updated_at": "2025-08-30T12:21:22.308071",
+    "tags": [
+      "ml",
+      "ai",
+      "learning"
+    ]
+  },
+  "d7316434-752e-4fd4-9d90-646764fbd7be": {
+    "id": "d7316434-752e-4fd4-9d90-646764fbd7be",
+    "question": "What is RAG (Retrieval-Augmented Generation)?",
+    "answer": "RAG is a framework that combines retrieval of relevant documents with generative AI to provide more accurate, contextual responses by grounding LLM outputs in external knowledge sources.",
+    "category": "ai",
+    "created_at": "2025-08-30T12:22:29.914746",
+    "updated_at": "2025-08-30T12:22:29.914746",
+    "tags": [
+      "rag",
+      "retrieval",
+      "generation",
+      "llm",
+      "ai"
+    ]
+  },
+  "ef1a97c0-bd24-4778-b04c-f6e99fa7920a": {
+    "id": "ef1a97c0-bd24-4778-b04c-f6e99fa7920a",
+    "question": "How does RAG work?",
+    "answer": "RAG works in two steps: (1) Retrieval - search for relevant documents from a knowledge base using vector similarity, (2) Generation - use the retrieved context along with the query to generate an informed response using an LLM.",
+    "category": "ai",
+    "created_at": "2025-08-30T12:22:29.915044",
+    "updated_at": "2025-08-30T12:22:29.915044",
+    "tags": [
+      "rag",
+      "workflow",
+      "retrieval",
+      "generation",
+      "vector-search"
+    ]
+  },
+  "7c1d8499-dcb8-4ee6-ac9a-eae11be3d0d5": {
+    "id": "7c1d8499-dcb8-4ee6-ac9a-eae11be3d0d5",
+    "question": "What are the components of a RAG system?",
+    "answer": "A RAG system consists of: (1) Document store/vector database, (2) Embedding model for text vectorization, (3) Retrieval mechanism (similarity search), (4) Language model for generation, (5) Orchestration layer to combine retrieval and generation.",
+    "category": "ai",
+    "created_at": "2025-08-30T12:22:29.915219",
+    "updated_at": "2025-08-30T12:22:29.915219",
+    "tags": [
+      "rag",
+      "components",
+      "vector-database",
+      "embeddings",
+      "architecture"
+    ]
+  },
+  "50014ab2-4435-4a6e-a3d0-740f84b358ca": {
+    "id": "50014ab2-4435-4a6e-a3d0-740f84b358ca",
+    "question": "What are popular vector databases for RAG?",
+    "answer": "Popular vector databases for RAG include: Pinecone, Weaviate, Chroma, Qdrant, FAISS, Milvus, and pgvector (PostgreSQL extension). Each offers different features for storing and searching embeddings.",
+    "category": "ai",
+    "created_at": "2025-08-30T12:22:29.915850",
+    "updated_at": "2025-08-30T12:22:29.915850",
+    "tags": [
+      "rag",
+      "vector-database",
+      "pinecone",
+      "chroma",
+      "faiss",
+      "embeddings"
+    ]
+  },
+  "b16e1654-721d-4c2b-a404-0c2712d7f957": {
+    "id": "b16e1654-721d-4c2b-a404-0c2712d7f957",
+    "question": "How do you evaluate RAG system performance?",
+    "answer": "RAG systems are evaluated using: (1) Retrieval metrics - recall, precision, MRR, (2) Generation metrics - BLEU, ROUGE, BERTScore, (3) End-to-end metrics - faithfulness, answer relevance, context precision, and human evaluation.",
+    "category": "ai",
+    "created_at": "2025-08-30T12:22:29.916055",
+    "updated_at": "2025-08-30T12:22:29.916055",
+    "tags": [
+      "rag",
+      "evaluation",
+      "metrics",
+      "retrieval",
+      "generation",
+      "performance"
+    ]
+  },
+  "38bcef5b-fa01-45a3-8bba-e22cfc0225be": {
+    "id": "38bcef5b-fa01-45a3-8bba-e22cfc0225be",
+    "question": "What is chunking in RAG systems?",
+    "answer": "Chunking is the process of breaking down large documents into smaller, manageable pieces before embedding. Common strategies include fixed-size chunking, semantic chunking, and recursive chunking with overlap to maintain context.",
+    "category": "ai",
+    "created_at": "2025-08-30T12:22:29.916463",
+    "updated_at": "2025-08-30T12:22:29.916463",
+    "tags": [
+      "rag",
+      "chunking",
+      "preprocessing",
+      "documents",
+      "embeddings"
+    ]
+  },
+  "b10d5485-9cc5-4c81-84ee-4976daafe336": {
+    "id": "b10d5485-9cc5-4c81-84ee-4976daafe336",
+    "question": "What are common RAG implementation frameworks?",
+    "answer": "Popular RAG frameworks include: LangChain, LlamaIndex, Haystack, Canopy, and Verba. These provide pre-built components for document processing, retrieval, and generation workflows.",
+    "category": "ai",
+    "created_at": "2025-08-30T12:22:29.917159",
+    "updated_at": "2025-08-30T12:22:29.917159",
+    "tags": [
+      "rag",
+      "frameworks",
+      "langchain",
+      "llamaindex",
+      "haystack",
+      "implementation"
+    ]
+  },
+  "61fc6436-9339-4fc6-bb29-3c3a6050a181": {
+    "id": "61fc6436-9339-4fc6-bb29-3c3a6050a181",
+    "question": "c \uc5b8\uc5b4\ub780",
+    "answer": "\uc5b4\ub5bb\uac8c",
+    "category": "\ud504\ub85c\uadf8\ub798\ubc0d",
+    "created_at": "2025-08-30T12:41:39.461277",
+    "updated_at": "2025-08-30T12:41:39.461277",
+    "tags": []
+  },
+  "d7e630e1-49e4-4517-a404-184c944099d0": {
+    "id": "d7e630e1-49e4-4517-a404-184c944099d0",
+    "question": "What is the Pythagorean theorem?",
+    "answer": "The Pythagorean theorem states that in a right triangle, the square of the hypotenuse equals the sum of squares of the other two sides: a\u00b2 + b\u00b2 = c\u00b2",
+    "category": "mathematics",
+    "created_at": "2025-08-30T12:45:00.964823",
+    "updated_at": "2025-08-30T12:45:00.964823",
+    "tags": [
+      "geometry",
+      "theorem",
+      "triangle",
+      "math"
+    ]
+  },
+  "8d370400-0aec-47ed-9a90-e2e7db6e7fed": {
+    "id": "8d370400-0aec-47ed-9a90-e2e7db6e7fed",
+    "question": "How do you calculate the area of a circle?",
+    "answer": "The area of a circle is calculated using the formula A = \u03c0r\u00b2, where r is the radius of the circle.",
+    "category": "mathematics",
+    "created_at": "2025-08-30T12:45:00.965289",
+    "updated_at": "2025-08-30T12:45:00.965289",
+    "tags": [
+      "geometry",
+      "circle",
+      "area",
+      "formula"
+    ]
+  },
+  "361aefda-169e-4af0-8ae3-55ded095cd00": {
+    "id": "361aefda-169e-4af0-8ae3-55ded095cd00",
+    "question": "What is the quadratic formula?",
+    "answer": "The quadratic formula is x = (-b \u00b1 \u221a(b\u00b2-4ac)) / 2a, used to find the roots of quadratic equations in the form ax\u00b2 + bx + c = 0",
+    "category": "mathematics",
+    "created_at": "2025-08-30T12:45:00.965551",
+    "updated_at": "2025-08-30T12:45:00.965551",
+    "tags": [
+      "algebra",
+      "quadratic",
+      "formula",
+      "equations"
+    ]
+  },
+  "3da3a4cd-4091-415d-9c6c-328bafb12a24": {
+    "id": "3da3a4cd-4091-415d-9c6c-328bafb12a24",
+    "question": "What is Newton's first law of motion?",
+    "answer": "Newton's first law states that an object at rest stays at rest, and an object in motion stays in motion at constant velocity, unless acted upon by an external force.",
+    "category": "science",
+    "created_at": "2025-08-30T12:45:00.965777",
+    "updated_at": "2025-08-30T12:45:00.965777",
+    "tags": [
+      "physics",
+      "newton",
+      "motion",
+      "force"
+    ]
+  },
+  "3fb5c386-778b-4fbc-ab60-669299d70923": {
+    "id": "3fb5c386-778b-4fbc-ab60-669299d70923",
+    "question": "What is photosynthesis?",
+    "answer": "Photosynthesis is the process by which plants use sunlight, carbon dioxide, and water to produce glucose and oxygen. The equation is: 6CO\u2082 + 6H\u2082O + light energy \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082",
+    "category": "science",
+    "created_at": "2025-08-30T12:45:00.966005",
+    "updated_at": "2025-08-30T12:45:00.966005",
+    "tags": [
+      "biology",
+      "plants",
+      "photosynthesis",
+      "energy"
+    ]
+  },
+  "7760e7a5-11c3-43d7-b03b-bf3981d22913": {
+    "id": "7760e7a5-11c3-43d7-b03b-bf3981d22913",
+    "question": "What is the periodic table?",
+    "answer": "The periodic table is a systematic arrangement of chemical elements organized by atomic number, showing recurring patterns in their properties.",
+    "category": "science",
+    "created_at": "2025-08-30T12:45:00.966234",
+    "updated_at": "2025-08-30T12:45:00.966234",
+    "tags": [
+      "chemistry",
+      "elements",
+      "periodic-table",
+      "atomic"
+    ]
+  },
+  "06e89c88-0745-42f6-94a8-5b01a30a7f8f": {
+    "id": "06e89c88-0745-42f6-94a8-5b01a30a7f8f",
+    "question": "When did World War II end?",
+    "answer": "World War II ended on September 2, 1945, when Japan formally surrendered aboard the USS Missouri in Tokyo Bay.",
+    "category": "history",
+    "created_at": "2025-08-30T12:45:00.966468",
+    "updated_at": "2025-08-30T12:45:00.966468",
+    "tags": [
+      "wwii",
+      "1945",
+      "japan",
+      "surrender"
+    ]
+  },
+  "fba7efb8-8542-45a7-95e6-df0e73f0c88a": {
+    "id": "fba7efb8-8542-45a7-95e6-df0e73f0c88a",
+    "question": "Who was the first president of the United States?",
+    "answer": "George Washington was the first president of the United States, serving from 1789 to 1797.",
+    "category": "history",
+    "created_at": "2025-08-30T12:45:00.966717",
+    "updated_at": "2025-08-30T12:45:00.966717",
+    "tags": [
+      "usa",
+      "president",
+      "washington",
+      "founding-fathers"
+    ]
+  },
+  "09373a57-e1db-4b40-88e6-c3f3a9afefaf": {
+    "id": "09373a57-e1db-4b40-88e6-c3f3a9afefaf",
+    "question": "What was the Renaissance?",
+    "answer": "The Renaissance was a cultural movement in Europe from the 14th to 17th century, marked by renewed interest in classical learning, art, and humanism.",
+    "category": "history",
+    "created_at": "2025-08-30T12:45:00.966953",
+    "updated_at": "2025-08-30T12:45:00.966953",
+    "tags": [
+      "renaissance",
+      "europe",
+      "art",
+      "culture"
+    ]
+  },
+  "8fe0d6d0-0deb-4e68-b636-7107b1753635": {
+    "id": "8fe0d6d0-0deb-4e68-b636-7107b1753635",
+    "question": "What is a metaphor?",
+    "answer": "A metaphor is a figure of speech that compares two different things by stating that one thing is another, without using 'like' or 'as'. Example: 'Life is a journey.'",
+    "category": "language",
+    "created_at": "2025-08-30T12:45:00.967196",
+    "updated_at": "2025-08-30T12:45:00.967196",
+    "tags": [
+      "literature",
+      "figurative-language",
+      "metaphor",
+      "writing"
+    ]
+  },
+  "c66a53d1-3361-4ae0-993c-b28d75d656dc": {
+    "id": "c66a53d1-3361-4ae0-993c-b28d75d656dc",
+    "question": "What are the parts of speech?",
+    "answer": "The eight parts of speech are: nouns, pronouns, verbs, adjectives, adverbs, prepositions, conjunctions, and interjections.",
+    "category": "language",
+    "created_at": "2025-08-30T12:45:00.967441",
+    "updated_at": "2025-08-30T12:45:00.967441",
+    "tags": [
+      "grammar",
+      "parts-of-speech",
+      "english",
+      "language"
+    ]
+  },
+  "e2cc359e-af3c-4665-8148-e9d672fb9d9f": {
+    "id": "e2cc359e-af3c-4665-8148-e9d672fb9d9f",
+    "question": "What is the difference between their, there, and they're?",
+    "answer": "'Their' shows possession, 'there' indicates location or existence, and 'they're' is a contraction of 'they are'.",
+    "category": "language",
+    "created_at": "2025-08-30T12:45:00.967707",
+    "updated_at": "2025-08-30T12:45:00.967707",
+    "tags": [
+      "grammar",
+      "homophones",
+      "spelling",
+      "usage"
+    ]
+  },
+  "3e0d7f46-f480-47a7-8be0-dd462b16db40": {
+    "id": "3e0d7f46-f480-47a7-8be0-dd462b16db40",
+    "question": "What is the capital of Australia?",
+    "answer": "The capital of Australia is Canberra, not Sydney or Melbourne as many people think.",
+    "category": "geography",
+    "created_at": "2025-08-30T12:45:00.967971",
+    "updated_at": "2025-08-30T12:45:00.967971",
+    "tags": [
+      "australia",
+      "capital",
+      "canberra",
+      "world-capitals"
+    ]
+  },
+  "155639db-3d5c-4f70-9ee7-2699cb69eb93": {
+    "id": "155639db-3d5c-4f70-9ee7-2699cb69eb93",
+    "question": "What are the seven continents?",
+    "answer": "The seven continents are: Asia, Africa, North America, South America, Antarctica, Europe, and Australia (Oceania).",
+    "category": "geography",
+    "created_at": "2025-08-30T12:45:00.968236",
+    "updated_at": "2025-08-30T12:45:00.968236",
+    "tags": [
+      "continents",
+      "geography",
+      "world",
+      "earth"
+    ]
+  },
+  "ca91bb15-86ae-47c8-acbb-b0a3a4966f98": {
+    "id": "ca91bb15-86ae-47c8-acbb-b0a3a4966f98",
+    "question": "What is the longest river in the world?",
+    "answer": "The Nile River is generally considered the longest river in the world at approximately 4,135 miles (6,650 km) long.",
+    "category": "geography",
+    "created_at": "2025-08-30T12:45:00.968514",
+    "updated_at": "2025-08-30T12:45:00.968514",
+    "tags": [
+      "rivers",
+      "nile",
+      "longest",
+      "geography"
+    ]
+  },
+  "7d605e52-63ad-4163-97e9-235b5c0432d1": {
+    "id": "7d605e52-63ad-4163-97e9-235b5c0432d1",
+    "question": "What is an algorithm?",
+    "answer": "An algorithm is a step-by-step set of instructions designed to solve a specific problem or complete a task.",
+    "category": "computer-science",
+    "created_at": "2025-08-30T12:45:00.968814",
+    "updated_at": "2025-08-30T12:45:00.968814",
+    "tags": [
+      "algorithm",
+      "programming",
+      "problem-solving",
+      "cs"
+    ]
+  },
+  "aeb119e8-b372-4ea6-913b-6654f3455fda": {
+    "id": "aeb119e8-b372-4ea6-913b-6654f3455fda",
+    "question": "What is the difference between HTML and CSS?",
+    "answer": "HTML (HyperText Markup Language) structures web content, while CSS (Cascading Style Sheets) controls the visual styling and layout of that content.",
+    "category": "computer-science",
+    "created_at": "2025-08-30T12:45:00.969109",
+    "updated_at": "2025-08-30T12:45:00.969109",
+    "tags": [
+      "html",
+      "css",
+      "web-development",
+      "programming"
+    ]
+  },
+  "22fa2418-d126-44db-bcbd-9dda593df9bd": {
+    "id": "22fa2418-d126-44db-bcbd-9dda593df9bd",
+    "question": "What is a variable in programming?",
+    "answer": "A variable is a named storage location in computer memory that holds a value that can be referenced and manipulated in a program.",
+    "category": "computer-science",
+    "created_at": "2025-08-30T12:45:00.969407",
+    "updated_at": "2025-08-30T12:45:00.969407",
+    "tags": [
+      "variables",
+      "programming",
+      "memory",
+      "coding"
+    ]
+  },
+  "3a7b6790-895a-4c8c-923c-ade56be1253f": {
+    "id": "3a7b6790-895a-4c8c-923c-ade56be1253f",
+    "question": "What is the Pomodoro Technique?",
+    "answer": "The Pomodoro Technique is a time management method where you work for 25 minutes, then take a 5-minute break. After 4 cycles, take a longer 15-30 minute break.",
+    "category": "study-tips",
+    "created_at": "2025-08-30T12:45:00.969933",
+    "updated_at": "2025-08-30T12:45:00.969933",
+    "tags": [
+      "study-tips",
+      "time-management",
+      "pomodoro",
+      "productivity"
+    ]
+  },
+  "79d6ff5d-672c-4bdd-b333-110604bb26d0": {
+    "id": "79d6ff5d-672c-4bdd-b333-110604bb26d0",
+    "question": "How can I improve my note-taking?",
+    "answer": "Use methods like Cornell notes, mind maps, or the outline method. Write key points, use abbreviations, review regularly, and organize by topics or dates.",
+    "category": "study-tips",
+    "created_at": "2025-08-30T12:45:00.970249",
+    "updated_at": "2025-08-30T12:45:00.970249",
+    "tags": [
+      "note-taking",
+      "study-skills",
+      "organization",
+      "learning"
+    ]
+  },
+  "33f20d60-7a11-4fd3-85f9-2331249c6ea0": {
+    "id": "33f20d60-7a11-4fd3-85f9-2331249c6ea0",
+    "question": "What are good test-taking strategies?",
+    "answer": "Read questions carefully, answer easy questions first, manage your time, eliminate wrong answers in multiple choice, and review your answers before submitting.",
+    "category": "study-tips",
+    "created_at": "2025-08-30T12:45:00.970575",
+    "updated_at": "2025-08-30T12:45:00.970575",
+    "tags": [
+      "test-taking",
+      "exams",
+      "strategy",
+      "academic-success"
+    ]
+  },
+  "f8651943-73f1-4748-b48a-e7919329da39": {
+    "id": "f8651943-73f1-4748-b48a-e7919329da39",
+    "question": "How many bones are in the human body?",
+    "answer": "An adult human body has 206 bones. Babies are born with about 270 bones, but many fuse together as they grow.",
+    "category": "general",
+    "created_at": "2025-08-30T12:45:00.970909",
+    "updated_at": "2025-08-30T12:45:00.970909",
+    "tags": [
+      "human-body",
+      "anatomy",
+      "bones",
+      "biology"
+    ]
+  },
+  "ad6ca741-ea81-4655-844c-3dbcaf24317d": {
+    "id": "ad6ca741-ea81-4655-844c-3dbcaf24317d",
+    "question": "What is the speed of light?",
+    "answer": "The speed of light in a vacuum is approximately 299,792,458 meters per second (about 186,282 miles per second).",
+    "category": "general",
+    "created_at": "2025-08-30T12:45:00.971235",
+    "updated_at": "2025-08-30T12:45:00.971235",
+    "tags": [
+      "physics",
+      "light",
+      "speed",
+      "constants"
+    ]
+  },
+  "6b5549bd-65b3-4296-a550-d1e776b327e8": {
+    "id": "6b5549bd-65b3-4296-a550-d1e776b327e8",
+    "question": "How many days are in a leap year?",
+    "answer": "A leap year has 366 days instead of the usual 365. Leap years occur every 4 years, with some exceptions for century years.",
+    "category": "general",
+    "created_at": "2025-08-30T12:45:00.971569",
+    "updated_at": "2025-08-30T12:45:00.971569",
+    "tags": [
+      "calendar",
+      "leap-year",
+      "time",
+      "mathematics"
+    ]
+  },
+  "90c57aaa-43a9-43d0-84dc-bf915ad000e8": {
+    "id": "90c57aaa-43a9-43d0-84dc-bf915ad000e8",
+    "question": "\ud53c\ud0c0\uace0\ub77c\uc2a4 \uc815\ub9ac\ub780 \ubb34\uc5c7\uc778\uac00\uc694?",
+    "answer": "\ud53c\ud0c0\uace0\ub77c\uc2a4 \uc815\ub9ac\ub294 \uc9c1\uac01\uc0bc\uac01\ud615\uc5d0\uc11c \ube57\ubcc0\uc758 \uc81c\uacf1\uc774 \ub2e4\ub978 \ub450 \ubcc0\uc758 \uc81c\uacf1\uc758 \ud569\uacfc \uac19\ub2e4\ub294 \uc815\ub9ac\uc785\ub2c8\ub2e4. \uc989, a\u00b2 + b\u00b2 = c\u00b2 (c\ub294 \ube57\ubcc0)\uc785\ub2c8\ub2e4.",
+    "category": "mathematics",
+    "created_at": "2025-08-30T12:57:11.168747",
+    "updated_at": "2025-08-30T12:57:11.168747",
+    "tags": [
+      "\uae30\ud558",
+      "\uc815\ub9ac",
+      "\uc0bc\uac01\ud615",
+      "\uc218\ud559",
+      "\ud53c\ud0c0\uace0\ub77c\uc2a4"
+    ]
+  },
+  "ab8aec7b-e27d-416c-bfff-d293c1dfe98a": {
+    "id": "ab8aec7b-e27d-416c-bfff-d293c1dfe98a",
+    "question": "\uc6d0\uc758 \ub113\uc774\ub294 \uc5b4\ub5bb\uac8c \uad6c\ud558\ub098\uc694?",
+    "answer": "\uc6d0\uc758 \ub113\uc774\ub294 A = \u03c0r\u00b2 \uacf5\uc2dd\uc73c\ub85c \uad6c\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4. \uc5ec\uae30\uc11c r\uc740 \uc6d0\uc758 \ubc18\uc9c0\ub984\uc774\uace0, \u03c0(\ud30c\uc774)\ub294 \uc57d 3.14159\uc785\ub2c8\ub2e4.",
+    "category": "mathematics",
+    "created_at": "2025-08-30T12:57:11.169237",
+    "updated_at": "2025-08-30T12:57:11.169237",
+    "tags": [
+      "\uae30\ud558",
+      "\uc6d0",
+      "\ub113\uc774",
+      "\uacf5\uc2dd",
+      "\ud30c\uc774"
+    ]
+  },
+  "525e31a2-bbef-4a49-89c2-3a59caae746b": {
+    "id": "525e31a2-bbef-4a49-89c2-3a59caae746b",
+    "question": "\uc774\ucc28\ubc29\uc815\uc2dd\uc758 \ud574\ub294 \uc5b4\ub5bb\uac8c \uad6c\ud558\ub098\uc694?",
+    "answer": "\uc774\ucc28\ubc29\uc815\uc2dd ax\u00b2 + bx + c = 0\uc758 \ud574\ub294 \uadfc\uc758 \uacf5\uc2dd x = (-b \u00b1 \u221a(b\u00b2-4ac)) / 2a \ub97c \uc0ac\uc6a9\ud558\uc5ec \uad6c\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.",
+    "category": "mathematics",
+    "created_at": "2025-08-30T12:57:11.169638",
+    "updated_at": "2025-08-30T12:57:11.169638",
+    "tags": [
+      "\ub300\uc218",
+      "\uc774\ucc28\ubc29\uc815\uc2dd",
+      "\uadfc\uc758\uacf5\uc2dd",
+      "\ubc29\uc815\uc2dd"
+    ]
+  },
+  "f9503da9-9a6c-43e7-b193-3188621f2bb7": {
+    "id": "f9503da9-9a6c-43e7-b193-3188621f2bb7",
+    "question": "\ubd84\uc218\uc758 \ub367\uc148\uc740 \uc5b4\ub5bb\uac8c \ud558\ub098\uc694?",
+    "answer": "\ubd84\uc218\uc758 \ub367\uc148\uc744 \ud560 \ub54c\ub294 \uba3c\uc800 \ubd84\ubaa8\ub97c \uac19\uac8c \ub9cc\ub4e0 \ud6c4 \ubd84\uc790\ub07c\ub9ac \ub354\ud569\ub2c8\ub2e4. \uc608: 1/2 + 1/3 = 3/6 + 2/6 = 5/6",
+    "category": "mathematics",
+    "created_at": "2025-08-30T12:57:11.170054",
+    "updated_at": "2025-08-30T12:57:11.170054",
+    "tags": [
+      "\ubd84\uc218",
+      "\ub367\uc148",
+      "\ud1b5\ubd84",
+      "\uae30\ubcf8\uc5f0\uc0b0"
+    ]
+  },
+  "10748aa9-3415-4e2e-9f3d-109e386ba26e": {
+    "id": "10748aa9-3415-4e2e-9f3d-109e386ba26e",
+    "question": "\uc0bc\uac01\ud615\uc758 \ub0b4\uac01\uc758 \ud569\uc740 \uc5bc\ub9c8\uc778\uac00\uc694?",
+    "answer": "\ubaa8\ub4e0 \uc0bc\uac01\ud615\uc758 \ub0b4\uac01\uc758 \ud569\uc740 \ud56d\uc0c1 180\ub3c4\uc785\ub2c8\ub2e4. \uc774\ub294 \uc0bc\uac01\ud615\uc758 \uc911\uc694\ud55c \uc131\uc9c8 \uc911 \ud558\ub098\uc785\ub2c8\ub2e4.",
+    "category": "mathematics",
+    "created_at": "2025-08-30T12:57:11.170447",
+    "updated_at": "2025-08-30T12:57:11.170447",
+    "tags": [
+      "\uae30\ud558",
+      "\uc0bc\uac01\ud615",
+      "\ub0b4\uac01",
+      "\uac01\ub3c4"
+    ]
+  },
+  "39d72694-0440-4a49-8dcf-d0ba7543d350": {
+    "id": "39d72694-0440-4a49-8dcf-d0ba7543d350",
+    "question": "\uad11\ud569\uc131\uc774\ub780 \ubb34\uc5c7\uc778\uac00\uc694?",
+    "answer": "\uad11\ud569\uc131\uc740 \uc2dd\ubb3c\uc774 \ud587\ube5b, \uc774\uc0b0\ud654\ud0c4\uc18c, \ubb3c\uc744 \uc774\uc6a9\ud574 \ud3ec\ub3c4\ub2f9\uacfc \uc0b0\uc18c\ub97c \ub9cc\ub4dc\ub294 \uacfc\uc815\uc785\ub2c8\ub2e4. \ud654\ud559\uc2dd: 6CO\u2082 + 6H\u2082O + \ube5b\uc5d0\ub108\uc9c0 \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082",
+    "category": "science",
+    "created_at": "2025-08-30T12:57:11.170846",
+    "updated_at": "2025-08-30T12:57:11.170846",
+    "tags": [
+      "\uc0dd\ubb3c",
+      "\uc2dd\ubb3c",
+      "\uad11\ud569\uc131",
+      "\uc5d0\ub108\uc9c0",
+      "\ud654\ud559\ubc18\uc751"
+    ]
+  },
+  "b38b2d81-038d-4de3-a48a-4ee9f9f5bb6d": {
+    "id": "b38b2d81-038d-4de3-a48a-4ee9f9f5bb6d",
+    "question": "\ub274\ud134\uc758 \uc6b4\ub3d9 \ubc95\uce59\uc740 \ubb34\uc5c7\uc778\uac00\uc694?",
+    "answer": "\ub274\ud134\uc758 3\ubc95\uce59: 1\ubc95\uce59(\uad00\uc131\uc758 \ubc95\uce59) - \uc678\ub825\uc774 \uc5c6\uc73c\uba74 \ubb3c\uccb4\ub294 \uc815\uc9c0\ud558\uac70\ub098 \ub4f1\uc18d\uc6b4\ub3d9, 2\ubc95\uce59 - F=ma, 3\ubc95\uce59 - \uc791\uc6a9\ubc18\uc791\uc6a9\uc758 \ubc95\uce59",
+    "category": "science",
+    "created_at": "2025-08-30T12:57:11.171261",
+    "updated_at": "2025-08-30T12:57:11.171261",
+    "tags": [
+      "\ubb3c\ub9ac",
+      "\ub274\ud134",
+      "\uc6b4\ub3d9",
+      "\ud798",
+      "\uad00\uc131"
+    ]
+  },
+  "6fb961b8-c821-491e-8dfc-56f093458f3b": {
+    "id": "6fb961b8-c821-491e-8dfc-56f093458f3b",
+    "question": "\uc6d0\uc18c\uc8fc\uae30\uc728\ud45c\ub294 \uc5b4\ub5bb\uac8c \ubc30\uc5f4\ub418\uc5b4 \uc788\ub098\uc694?",
+    "answer": "\uc8fc\uae30\uc728\ud45c\ub294 \uc6d0\uc18c\ub4e4\uc744 \uc6d0\uc790\ubc88\ud638(\uc591\uc131\uc790 \uc218) \uc21c\uc73c\ub85c \ubc30\uc5f4\ud55c \ud45c\uc785\ub2c8\ub2e4. \uac19\uc740 \uc871(\uc138\ub85c\uc904)\uc758 \uc6d0\uc18c\ub4e4\uc740 \ube44\uc2b7\ud55c \uc131\uc9c8\uc744 \uac00\uc9d1\ub2c8\ub2e4.",
+    "category": "science",
+    "created_at": "2025-08-30T12:57:11.171677",
+    "updated_at": "2025-08-30T12:57:11.171677",
+    "tags": [
+      "\ud654\ud559",
+      "\uc6d0\uc18c",
+      "\uc8fc\uae30\uc728\ud45c",
+      "\uc6d0\uc790\ubc88\ud638",
+      "\uc871"
+    ]
+  },
+  "6aeb75e2-1ac9-465e-8fe8-080380808574": {
+    "id": "6aeb75e2-1ac9-465e-8fe8-080380808574",
+    "question": "\uc9c0\uad6c\uc758 \uce35\uad6c\uc870\ub294 \uc5b4\ub5bb\uac8c \ub418\uc5b4 \uc788\ub098\uc694?",
+    "answer": "\uc9c0\uad6c\ub294 \uc548\ucabd\ubd80\ud130 \ub0b4\ud575(\uace0\uccb4 \ucca0, \ub2c8\ucf08), \uc678\ud575(\uc561\uccb4), \ub9e8\ud2c0(\ub9c8\uadf8\ub9c8), \uc9c0\uac01(\uc554\uc11d\uce35)\uc73c\ub85c \uad6c\uc131\ub418\uc5b4 \uc788\uc2b5\ub2c8\ub2e4.",
+    "category": "science",
+    "created_at": "2025-08-30T12:57:11.172091",
+    "updated_at": "2025-08-30T12:57:11.172091",
+    "tags": [
+      "\uc9c0\uad6c\uacfc\ud559",
+      "\uc9c0\uad6c\uad6c\uc870",
+      "\ub0b4\ud575",
+      "\uc678\ud575",
+      "\ub9e8\ud2c0",
+      "\uc9c0\uac01"
+    ]
+  },
+  "96acc47b-633c-47d4-b795-5b7d627a741a": {
+    "id": "96acc47b-633c-47d4-b795-5b7d627a741a",
+    "question": "\ud55c\uad6d\uc804\uc7c1\uc740 \uc5b8\uc81c \uc77c\uc5b4\ub0ac\ub098\uc694?",
+    "answer": "\ud55c\uad6d\uc804\uc7c1\uc740 1950\ub144 6\uc6d4 25\uc77c\uc5d0 \uc2dc\uc791\ub418\uc5b4 1953\ub144 7\uc6d4 27\uc77c \ud734\uc804\ud611\uc815 \uccb4\uacb0\ub85c \ubd84\ub2e8\uc774 \uace0\ucc29\ud654\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+    "category": "history",
+    "created_at": "2025-08-30T12:57:11.172502",
+    "updated_at": "2025-08-30T12:57:11.172502",
+    "tags": [
+      "\ud55c\uad6d\uc0ac",
+      "\ud55c\uad6d\uc804\uc7c1",
+      "1950\ub144",
+      "\ubd84\ub2e8",
+      "\ud734\uc804\ud611\uc815"
+    ]
+  },
+  "0531068a-3412-44f2-8e03-12ff5ae4a991": {
+    "id": "0531068a-3412-44f2-8e03-12ff5ae4a991",
+    "question": "\uc138\uc885\ub300\uc655\uc758 \uc8fc\uc694 \uc5c5\uc801\uc740 \ubb34\uc5c7\uc778\uac00\uc694?",
+    "answer": "\uc138\uc885\ub300\uc655\uc758 \ub300\ud45c\uc801\uc778 \uc5c5\uc801\uc73c\ub85c\ub294 \ud55c\uae00 \ucc3d\uc81c, \uce21\uc6b0\uae30\u00b7\ud574\uc2dc\uacc4 \ubc1c\uba85, \uc9d1\ud604\uc804 \uc124\uce58, \uacfc\ud559\uae30\uc220 \ubc1c\ub2ec \ub4f1\uc774 \uc788\uc2b5\ub2c8\ub2e4.",
+    "category": "history",
+    "created_at": "2025-08-30T12:57:11.172915",
+    "updated_at": "2025-08-30T12:57:11.172915",
+    "tags": [
+      "\uc870\uc120\uc2dc\ub300",
+      "\uc138\uc885\ub300\uc655",
+      "\ud55c\uae00",
+      "\uc9d1\ud604\uc804",
+      "\uacfc\ud559\uae30\uc220"
+    ]
+  },
+  "7ef6edb0-3643-416a-81f3-903c8a3945f2": {
+    "id": "7ef6edb0-3643-416a-81f3-903c8a3945f2",
+    "question": "\uace0\ub824\uc2dc\ub300\uc758 \ud2b9\uc9d5\uc740 \ubb34\uc5c7\uc778\uac00\uc694?",
+    "answer": "\uace0\ub824\uc2dc\ub300(918-1392)\ub294 \ubd88\uad50\ubb38\ud654\uac00 \ubc1c\ub2ec\ud558\uace0, \uadc0\uc871\uc815\uce58, \uacfc\uac70\uc81c\ub3c4, \ud314\ub9cc\ub300\uc7a5\uacbd \uc81c\uc791 \ub4f1\uc774 \ud2b9\uc9d5\uc785\ub2c8\ub2e4.",
+    "category": "history",
+    "created_at": "2025-08-30T12:57:11.173331",
+    "updated_at": "2025-08-30T12:57:11.173331",
+    "tags": [
+      "\ud55c\uad6d\uc0ac",
+      "\uace0\ub824\uc2dc\ub300",
+      "\ubd88\uad50",
+      "\uadc0\uc871\uc815\uce58",
+      "\ud314\ub9cc\ub300\uc7a5\uacbd"
+    ]
+  },
+  "c39a472d-1831-4dc5-a1e2-1f3439cdf46c": {
+    "id": "c39a472d-1831-4dc5-a1e2-1f3439cdf46c",
+    "question": "\uc740\uc720\ubc95\uc774\ub780 \ubb34\uc5c7\uc778\uac00\uc694?",
+    "answer": "\uc740\uc720\ubc95\uc740 \uc5b4\ub5a4 \uc0ac\ubb3c\uc744 \ub2e4\ub978 \uc0ac\ubb3c\uc5d0 \ube57\ub300\uc5b4 \uc9c1\uc811\uc801\uc73c\ub85c \ud45c\ud604\ud558\ub294 \uc218\uc0ac\ubc95\uc785\ub2c8\ub2e4. \uc608: '\uc778\uc0dd\uc740 \uc5ec\ud589\uc774\ub2e4'",
+    "category": "language",
+    "created_at": "2025-08-30T12:57:11.173771",
+    "updated_at": "2025-08-30T12:57:11.173771",
+    "tags": [
+      "\uad6d\uc5b4",
+      "\uc218\uc0ac\ubc95",
+      "\uc740\uc720\ubc95",
+      "\ubb38\ud559",
+      "\ud45c\ud604\uae30\ubc95"
+    ]
+  },
+  "eabbb142-70f9-4ebd-9ace-f25caaed1d3c": {
+    "id": "eabbb142-70f9-4ebd-9ace-f25caaed1d3c",
+    "question": "\ud55c\uae00\uc758 \ucc3d\uc81c \uc6d0\ub9ac\ub294 \ubb34\uc5c7\uc778\uac00\uc694?",
+    "answer": "\ud55c\uae00\uc740 \ubc1c\uc74c\uae30\uad00\uc758 \ubaa8\uc591\uc744 \ubcf8\ub5a0 \ub9cc\ub4e0 \ud45c\uc74c\ubb38\uc790\uc785\ub2c8\ub2e4. \uc790\uc74c\uc740 \ubc1c\uc74c\uae30\uad00\uc758 \ubaa8\uc591, \ubaa8\uc74c\uc740 \ucc9c\uc9c0\uc778 \uc0ac\uc0c1\uc744 \ubc14\ud0d5\uc73c\ub85c \ub9cc\ub4e4\uc5b4\uc84c\uc2b5\ub2c8\ub2e4.",
+    "category": "language",
+    "created_at": "2025-08-30T12:57:11.174202",
+    "updated_at": "2025-08-30T12:57:11.174202",
+    "tags": [
+      "\ud55c\uae00",
+      "\ucc3d\uc81c\uc6d0\ub9ac",
+      "\ud45c\uc74c\ubb38\uc790",
+      "\ucc9c\uc9c0\uc778",
+      "\uc138\uc885\ub300\uc655"
+    ]
+  },
+  "e2e60580-619e-49c4-9778-08ac2f40e25c": {
+    "id": "e2e60580-619e-49c4-9778-08ac2f40e25c",
+    "question": "\ud488\uc0ac\uc758 \uc885\ub958\uc5d0\ub294 \ubb34\uc5c7\uc774 \uc788\ub098\uc694?",
+    "answer": "\ud55c\uad6d\uc5b4 \ud488\uc0ac\ub294 \uba85\uc0ac, \ub300\uba85\uc0ac, \uc218\uc0ac, \uc870\uc0ac, \ub3d9\uc0ac, \ud615\uc6a9\uc0ac, \uad00\ud615\uc0ac, \ubd80\uc0ac, \uac10\ud0c4\uc0ac\ub85c 9\uac1c\uac00 \uc788\uc2b5\ub2c8\ub2e4.",
+    "category": "language",
+    "created_at": "2025-08-30T12:57:11.174721",
+    "updated_at": "2025-08-30T12:57:11.174721",
+    "tags": [
+      "\uad6d\uc5b4",
+      "\ubb38\ubc95",
+      "\ud488\uc0ac",
+      "\uba85\uc0ac",
+      "\ub3d9\uc0ac",
+      "\ud615\uc6a9\uc0ac"
+    ]
+  },
+  "e69b5ebc-c344-4158-a8c7-a84aac4512f3": {
+    "id": "e69b5ebc-c344-4158-a8c7-a84aac4512f3",
+    "question": "\uc6b0\ub9ac\ub098\ub77c\uc758 \uae30\ud6c4 \ud2b9\uc9d5\uc740 \ubb34\uc5c7\uc778\uac00\uc694?",
+    "answer": "\uc6b0\ub9ac\ub098\ub77c\ub294 \uc628\ub300 \uacc4\uc808\ud48d \uae30\ud6c4\ub85c, \uc0ac\uacc4\uc808\uc774 \ub69c\ub837\ud558\uace0 \uc5ec\ub984\uc5d0 \ub365\uace0 \uc2b5\ud558\uba70 \uaca8\uc6b8\uc5d0 \ucda5\uace0 \uac74\uc870\ud55c \ud2b9\uc9d5\uc774 \uc788\uc2b5\ub2c8\ub2e4.",
+    "category": "geography",
+    "created_at": "2025-08-30T12:57:11.175236",
+    "updated_at": "2025-08-30T12:57:11.175236",
+    "tags": [
+      "\uc9c0\ub9ac",
+      "\uae30\ud6c4",
+      "\uacc4\uc808\ud48d",
+      "\uc628\ub300\uae30\ud6c4",
+      "\uc0ac\uacc4\uc808"
+    ]
+  },
+  "703b29be-41ca-4d67-b104-ba2fe88a1b60": {
+    "id": "703b29be-41ca-4d67-b104-ba2fe88a1b60",
+    "question": "\uc138\uacc4 7\ub300\ub959\uc740 \ubb34\uc5c7\uc778\uac00\uc694?",
+    "answer": "\uc138\uacc4 7\ub300\ub959\uc740 \uc544\uc2dc\uc544, \uc544\ud504\ub9ac\uce74, \ubd81\uc544\uba54\ub9ac\uce74, \ub0a8\uc544\uba54\ub9ac\uce74, \ub0a8\uadf9, \uc720\ub7fd, \uc624\uc138\uc544\ub2c8\uc544\uc785\ub2c8\ub2e4.",
+    "category": "geography",
+    "created_at": "2025-08-30T12:57:11.175734",
+    "updated_at": "2025-08-30T12:57:11.175734",
+    "tags": [
+      "\uc138\uacc4\uc9c0\ub9ac",
+      "\ub300\ub959",
+      "\uc544\uc2dc\uc544",
+      "\uc544\ud504\ub9ac\uce74",
+      "\uc544\uba54\ub9ac\uce74"
+    ]
+  },
+  "0512b8b2-84d6-4b52-bf21-da038f2b7677": {
+    "id": "0512b8b2-84d6-4b52-bf21-da038f2b7677",
+    "question": "\uc54c\uace0\ub9ac\uc998\uc774\ub780 \ubb34\uc5c7\uc778\uac00\uc694?",
+    "answer": "\uc54c\uace0\ub9ac\uc998\uc740 \ubb38\uc81c\ub97c \ud574\uacb0\ud558\uae30 \uc704\ud55c \ub2e8\uacc4\ubcc4 \uc808\ucc28\ub098 \ubc29\ubc95\uc785\ub2c8\ub2e4. \ucef4\ud4e8\ud130\uac00 \uc774\ud574\ud560 \uc218 \uc788\ub294 \uba85\ub839\uc5b4\uc758 \uc21c\uc11c\ub77c\uace0 \ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.",
+    "category": "computer_science",
+    "created_at": "2025-08-30T12:57:11.176254",
+    "updated_at": "2025-08-30T12:57:11.176254",
+    "tags": [
+      "\ucef4\ud4e8\ud130\uacfc\ud559",
+      "\uc54c\uace0\ub9ac\uc998",
+      "\ud504\ub85c\uadf8\ub798\ubc0d",
+      "\ubb38\uc81c\ud574\uacb0"
+    ]
+  },
+  "f04f24e3-b435-4270-84f1-f24600e65e76": {
+    "id": "f04f24e3-b435-4270-84f1-f24600e65e76",
+    "question": "HTML\uacfc CSS\uc758 \ucc28\uc774\uc810\uc740 \ubb34\uc5c7\uc778\uac00\uc694?",
+    "answer": "HTML\uc740 \uc6f9 \ud398\uc774\uc9c0\uc758 \uad6c\uc870\uc640 \ub0b4\uc6a9\uc744 \ub9cc\ub4dc\ub294 \uc5b8\uc5b4\uc774\uace0, CSS\ub294 \uc6f9 \ud398\uc774\uc9c0\uc758 \ub514\uc790\uc778\uacfc \ub808\uc774\uc544\uc6c3\uc744 \uafb8\ubbf8\ub294 \uc5b8\uc5b4\uc785\ub2c8\ub2e4.",
+    "category": "computer_science",
+    "created_at": "2025-08-30T12:57:11.176979",
+    "updated_at": "2025-08-30T12:57:11.176979",
+    "tags": [
+      "\uc6f9\uac1c\ubc1c",
+      "HTML",
+      "CSS",
+      "\ud504\ub85c\uadf8\ub798\ubc0d",
+      "\uc6f9\ub514\uc790\uc778"
+    ]
+  },
+  "7c5163a2-7867-4311-a74e-d65136a330a7": {
+    "id": "7c5163a2-7867-4311-a74e-d65136a330a7",
+    "question": "\ud6a8\uacfc\uc801\uc778 \uc554\uae30 \ubc29\ubc95\uc740 \ubb34\uc5c7\uc778\uac00\uc694?",
+    "answer": "\ud6a8\uacfc\uc801\uc778 \uc554\uae30 \ubc29\ubc95\uc73c\ub85c\ub294 \ubc18\ubcf5 \ud559\uc2b5, \uc5f0\uc0c1\ubc95, \uc2a4\ud1a0\ub9ac\ud154\ub9c1, \uadf8\ub9bc\uc774\ub098 \ub3c4\ud45c \ud65c\uc6a9, \uc18c\ub9ac\ub0b4\uc5b4 \uc77d\uae30 \ub4f1\uc774 \uc788\uc2b5\ub2c8\ub2e4.",
+    "category": "study_tips",
+    "created_at": "2025-08-30T12:57:11.177480",
+    "updated_at": "2025-08-30T12:57:11.177480",
+    "tags": [
+      "\ud559\uc2b5\ubc95",
+      "\uc554\uae30",
+      "\uae30\uc5b5\uc220",
+      "\uacf5\ubd80\ubc29\ubc95",
+      "\ud559\uc2b5\uc804\ub7b5"
+    ]
+  },
+  "90727b59-a754-483c-84fc-3c538d74e9db": {
+    "id": "90727b59-a754-483c-84fc-3c538d74e9db",
+    "question": "\ud3ec\ubaa8\ub3c4\ub85c \uae30\ubc95\uc774\ub780 \ubb34\uc5c7\uc778\uac00\uc694?",
+    "answer": "\ud3ec\ubaa8\ub3c4\ub85c \uae30\ubc95\uc740 25\ubd84 \uc9d1\uc911 \uacf5\ubd80 \ud6c4 5\ubd84 \ud734\uc2dd\ud558\ub294 \ud328\ud134\uc744 \ubc18\ubcf5\ud558\ub294 \uc2dc\uac04 \uad00\ub9ac\ubc95\uc785\ub2c8\ub2e4. 4\ubc88\uc9f8 \ud734\uc2dd\uc740 15-30\ubd84\uc73c\ub85c \uae38\uac8c \ud569\ub2c8\ub2e4.",
+    "category": "study_tips",
+    "created_at": "2025-08-30T12:57:11.177973",
+    "updated_at": "2025-08-30T12:57:11.177973",
+    "tags": [
+      "\ud559\uc2b5\ubc95",
+      "\uc2dc\uac04\uad00\ub9ac",
+      "\ud3ec\ubaa8\ub3c4\ub85c",
+      "\uc9d1\uc911\ub825",
+      "\uc0dd\uc0b0\uc131"
+    ]
+  },
+  "0f29e9b3-6249-4826-8ec5-f4326bf00665": {
+    "id": "0f29e9b3-6249-4826-8ec5-f4326bf00665",
+    "question": "\uc2dc\ud5d8 \uc804 \ud6a8\uacfc\uc801\uc778 \ubcf5\uc2b5 \ubc29\ubc95\uc740?",
+    "answer": "\uc2dc\ud5d8 \uc804\uc5d0\ub294 \uc694\uc57d \ub178\ud2b8 \ub9cc\ub4e4\uae30, \ubb38\uc81c \ud480\uc774 \uc5f0\uc2b5, \ubaa8\ub974\ub294 \ubd80\ubd84 \uc9d1\uc911 \ud559\uc2b5, \ucda9\ubd84\ud55c \uc218\uba74, \uac74\uac15\ud55c \uc2dd\uc0ac\uac00 \uc911\uc694\ud569\ub2c8\ub2e4.",
+    "category": "study_tips",
+    "created_at": "2025-08-30T12:57:11.178474",
+    "updated_at": "2025-08-30T12:57:11.178474",
+    "tags": [
+      "\uc2dc\ud5d8\uc900\ube44",
+      "\ubcf5\uc2b5",
+      "\ud559\uc2b5\uc804\ub7b5",
+      "\uc2dc\ud5d8\uacf5\ubd80",
+      "\ub178\ud2b8\uc815\ub9ac"
+    ]
+  },
+  "48074bb6-a4a3-4b48-9c82-10995dd6daee": {
+    "id": "48074bb6-a4a3-4b48-9c82-10995dd6daee",
+    "question": "\ud398\ub974\ub9c8\uc758 \ub9c8\uc9c0\ub9c9 \uc815\uc758",
+    "answer": "\ubab0\ub77c",
+    "category": "mathematics",
+    "created_at": "2025-09-02T10:42:03.254031",
+    "updated_at": "2025-09-02T10:42:03.254031",
+    "tags": [
+      "\uc219\uc81c"
+    ]
+  },
+  "290775cb-03f6-45ce-a541-2b96c70b6093": {
+    "id": "290775cb-03f6-45ce-a541-2b96c70b6093",
+    "question": "\ud398\ub974\ub9c8\uc758 \ub9c8\uc9c0\ub9c9 \uc815\uc758",
+    "answer": "\uc54c\ub824\uc918",
+    "category": "mathematics",
+    "created_at": "2025-09-02T10:56:24.660142",
+    "updated_at": "2025-09-02T10:56:24.660142",
+    "tags": [
+      "\uc219\uc81c"
+    ]
+  },
+  "f702bc03-847b-4dcf-8675-c214d2eadd6d": {
+    "id": "f702bc03-847b-4dcf-8675-c214d2eadd6d",
+    "question": "\ud398\ub974\ub9c8\uc758 \ub9c8\uc9c0\ub9c9 \uc815\ub9ac",
+    "answer": "\uc9c8\ubb38\uc5d0 \ub300\ud55c \ub2f5\ubcc0\uc744 \uc704\ud574 \uad00\ub828 \uc815\ubcf4\ub97c \uc218\uc9d1\ud558\uace0 \ubd84\uc11d\ud574\ubcf4\uaca0\uc2b5\ub2c8\ub2e4. \ub354 \uad6c\uccb4\uc801\uc778 \ub0b4\uc6a9\uc774\ub098 \ub9e5\ub77d\uc744 \uc81c\uacf5\ud574\uc8fc\uc2dc\uba74 \ub354 \uc815\ud655\ud55c \ub2f5\ubcc0\uc744 \ub4dc\ub9b4 \uc218 \uc788\uc2b5\ub2c8\ub2e4.",
+    "category": "\uc77c\ubc18",
+    "created_at": "2025-09-02T10:57:20.041079",
+    "updated_at": "2025-09-02T10:57:20.041079",
+    "tags": [
+      "AI\uc0dd\uc131"
+    ]
+  },
+  "e4b0b362-ed53-4273-a27e-edc72c6afab7": {
+    "id": "e4b0b362-ed53-4273-a27e-edc72c6afab7",
+    "question": ",",
+    "answer": ",",
+    "category": "mathematics",
+    "created_at": "2025-09-02T11:19:15.655921",
+    "updated_at": "2025-09-02T11:19:15.655921",
+    "tags": [
+      "\uc219\uc81c"
+    ]
+  }
+}

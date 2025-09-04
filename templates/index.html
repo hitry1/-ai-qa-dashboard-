@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Q&A Knowledge Base</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1><i class="fas fa-brain"></i> RAG Q&A Knowledge Base</h1>
+                <p>Retrieval-Augmented Generation Knowledge System</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-links">
+                <a href="#search" class="nav-link active" onclick="showSection('search')">
+                    <i class="fas fa-search"></i> Search
+                </a>
+                <a href="#browse" class="nav-link" onclick="showSection('browse')">
+                    <i class="fas fa-list"></i> Browse All
+                </a>
+                <a href="#add" class="nav-link" onclick="showSection('add')">
+                    <i class="fas fa-plus"></i> Add Q&A
+                </a>
+                <a href="#stats" class="nav-link" onclick="showSection('stats')">
+                    <i class="fas fa-chart-bar"></i> Statistics
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <!-- Search Section -->
+            <section id="search" class="section active">
+                <div class="search-container">
+                    <h2><i class="fas fa-search"></i> Search Knowledge Base</h2>
+                    <div class="search-form">
+                        <div class="search-input-group">
+                            <input type="text" id="searchInput" placeholder="Search questions, answers, and tags..." />
+                            <select id="categoryFilter">
+                                <option value="">All Categories</option>
+                            </select>
+                            <button onclick="performSearch()" class="btn btn-primary">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="searchResults" class="results-container"></div>
+                </div>
+            </section>
+
+            <!-- Browse All Section -->
+            <section id="browse" class="section">
+                <div class="browse-container">
+                    <h2><i class="fas fa-list"></i> Browse All Q&A Pairs</h2>
+                    <div id="browseResults" class="results-container"></div>
+                </div>
+            </section>
+
+            <!-- Add Q&A Section -->
+            <section id="add" class="section">
+                <div class="add-container">
+                    <h2><i class="fas fa-plus"></i> Add New Q&A Pair</h2>
+                    <form id="addForm" class="add-form">
+                        <div class="form-group">
+                            <label for="question">Question *</label>
+                            <input type="text" id="question" required placeholder="Enter your question..." />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="answer">Answer *</label>
+                            <textarea id="answer" required placeholder="Enter the answer..." rows="4"></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="category">Category</label>
+                                <input type="text" id="category" placeholder="e.g., ai, programming" />
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="tags">Tags</label>
+                                <input type="text" id="tags" placeholder="tag1, tag2, tag3" />
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-plus"></i> Add Q&A Pair
+                        </button>
+                    </form>
+                    
+                    <div id="addResult" class="result-message"></div>
+                </div>
+            </section>
+
+            <!-- Statistics Section -->
+            <section id="stats" class="section">
+                <div class="stats-container">
+                    <h2><i class="fas fa-chart-bar"></i> Knowledge Base Statistics</h2>
+                    <div id="statsContent" class="stats-content">
+                        <div class="stats-loading">Loading statistics...</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 RAG Q&A Knowledge Base - Powered by MCP (Model Context Protocol)</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
