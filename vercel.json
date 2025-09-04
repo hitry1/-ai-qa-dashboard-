@@ -16,12 +16,6 @@
       "dest": "/api/index.py"
     }
   ],
-  "functions": {
-    "api/index.py": {
-      "includeFiles": "**",
-      "excludeFiles": "qa_venv/**"
-    }
-  },
   "env": {
     "FLASK_ENV": "production"
   }
